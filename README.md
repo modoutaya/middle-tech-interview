@@ -16,7 +16,7 @@ Given an integer `n`, return _the number of prime numbers that are strictly less
     Input: n = 1
     Output: 0
     
-Editor: https://playcode.io/typescript
+Code Editor: https://playcode.io/typescript
 
 ---
 
@@ -105,3 +105,5 @@ Response:
 - The same email can be reused in different teams.
 - If the team does not exist (when adding or listing members), the system must return a **404 – Team Not Found** error.
 - No update or delete operation is required for teams or members.
+
+Code Editor: https://replit.com
