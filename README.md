@@ -2,6 +2,12 @@
 
 Given an integer `n`, return _the number of prime numbers that are strictly less than_ `n`.
 
+### Sieve of Eratosthenes algorithm
+The algorithm works by elimination: it consists of removing from a table of integers from 2 to N all the multiples of a number (other than itself).
+By eliminating all these multiples, in the end, only the integers that are not multiples of any number except 1 and themselves will remain — these are the prime numbers.
+We start by crossing out the multiples of 2, then the remaining multiples of 3, then the remaining multiples of 5, and so on, each time crossing out all the multiples of the smallest remaining integer.
+We can stop when the square of the smallest remaining integer is greater than the largest remaining integer, because in that case, all non-primes have already been crossed out earlier.
+At the end of the process, all the integers that haven’t been crossed out are the prime numbers less than N.
 
 ### **Example 1:**
     Input: n = 10
