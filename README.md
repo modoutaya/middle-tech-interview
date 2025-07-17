@@ -1,27 +1,18 @@
-# Count Primes
+# Longest Common Prefix
 
-Given an integer `n`, return _the number of prime numbers that are strictly less than_ `n`.
+Write a function to find the longest common prefix string amongst an array of strings.
 
-### Sieve of Eratosthenes algorithm
-The algorithm works by elimination: it consists of removing from a table of integers from 2 to N all the multiples of a number (other than itself).
-By eliminating all these multiples, in the end, only the integers that are not multiples of any number except 1 and themselves will remain — these are the prime numbers.
-We start by crossing out the multiples of 2, then the remaining multiples of 3, then the remaining multiples of 5, and so on, each time crossing out all the multiples of the smallest remaining integer.
-We can stop when the square of the smallest remaining integer is greater than the largest remaining integer, because in that case, all non-primes have already been crossed out earlier.
-At the end of the process, all the integers that haven’t been crossed out are the prime numbers less than N.
+If there is no common prefix, return an empty string "".
 
 ### **Example 1:**
-    Input: n = 10
-    Output: 4
-    Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
+    Input: strs = ["flower","flow","flight"]
+    Output: "fl"
     
 ### **Example 2:**
-    Input: n = 0
-    Output: 0
-    
-### **Example 3:**
-    Input: n = 1
-    Output: 0
-    
+    Input: strs = ["dog","racecar","car"]
+    Output: ""
+    Explanation: There is no common prefix among the input strings.
+
 Code Editor: https://playcode.io/typescript
 
 ---
